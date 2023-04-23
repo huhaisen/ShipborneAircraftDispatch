@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html style="margin:0; padding:0;height:100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>编辑用户</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            perspective: 800px;
+            background-color: #ebf2f9;
+            -webkit-user-select: none;
+        }
+        
+        .sys-control-box {
+            float: right;
+            width: 104px;
+            border-radius: 0 4px 0 0;
+        }
+        
+        .sys-btn {
+            width: 28px;
+            height: 28px;
+            border: none;
+            outline: none;
+            margin: 0;
+        }
+        
+        .sys-btn-minis {
+            background: url(imgs/btn_mini_normal.png) no-repeat;
+        }
+        
+        .sys-btn-minis:hover {
+            border-radius: 0 4px 0 0;
+            background: url(imgs/btn_mini_highlight.png) no-repeat;
+        }
+        
+        .sys-btn-minis:active {
+            background: url(imgs/btn_mini_down.png) no-repeat;
+        }
+        
+        .sys-btn-big {
+            background: url(imgs/turnbig.png) no-repeat;
+        }
+        
+        .sys-btn-big:hover {
+            border-radius: 0 4px 0 0;
+            background: url(imgs/turnbig_light.png) no-repeat;
+        }
+        
+        .sys-btn-closed {
+            border-radius: 0 4px 0 0;
+            background: url(imgs/btn_close_normal.png) no-repeat;
+        }
+        
+        .sys-btn-closed:hover {
+            background: url(imgs/btn_close_highlight.png) no-repeat;
+        }
+        
+        .sys-btn-closed:active {
+            background: url(imgs/btn_close_down.png) no-repeat;
+        }
+        
+        .btn {
+            width: 78px;
+            height: 28px;
+            background: url(imgs/setting_btn_normal.png) no-repeat;
+            background-size: 100% 100%;
+            border: none;
+            outline: none;
+            margin: 0;
+        }
+        
+        .btn:hover,
+        .btn:active {
+            background: url(imgs/setting_btn_hover.png) no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .btn:focus {
+            background: url(imgs/setting_btn_hover.png) no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .saveForm {
+            left: 82px;
+            top: 85px;
+            position: absolute;
+        }
+        
+        .saveForm .textInput {
+            height: 30px;
+            width: 170px;
+            margin: 10px;
+            padding-right: 50px;
+            padding-left: 2px;
+        }
+        
+        .saveForm .saveButton {
+            height: 35px;
+            width: 106px;
+            margin: 20px;
+            margin-left: 106px;
+            color: white;
+            font-size: 18px;
+            background-color: blue;
+        }
+        
+        .saveForm .divText {
+            height: 35px;
+            width: 230px;
+            position: relative;
+            display: inline;
+        }
+        
+        .saveForm .divName {
+            height: 30px;
+            float: left;
+            font-size: 18px;
+            width: 98px;
+            text-align: left;
+            margin-top: 16px;
+        }
+        
+        .errorInformation {
+            font-size: 18px;
+            color: red;
+            float: left;
+            margin-left: 45px;
+        }
+    </style>
+    <script type="text/javascript" src="./scripts/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="card">
+        <div id="front" class="front shadow">
+            <div class="sys-control-box">
+                <button class="sys-btn sys-btn-minis" title="最小化"></button>
+                <button class="sys-btn sys-btn-big" title="最大化"></button>
+                <button class="sys-btn sys-btn-closed" title="关闭"></button>
+            </div>
+
+            <form class="saveForm">
+                <div id="userid">
+                    <input class="textInput" type="text" name="id" value="" style="display: none">
+                </div>
+                  <div id="userlid">
+                    <input class="textInput" type="text" name="lid" value="" style="display: none">
+                </div>
+                <div class="username">
+                    <div style="font-size:18px" class="divName">姓名</div>
+                    <div class="divText">
+                        <input class="textInput" type="text" name="username" value="180730146" placeholder="请输入姓名">
+                    </div>
+                </div>
+                <div class="department">
+                    <div style="font-size:18px" class="divName">部门</div>
+                    <div class="divText">
+                        <input class="textInput" type="text" name="department" value="180730146" placeholder="请输入部门">
+                    </div>
+                </div>
+                <div class="project">
+                    <div style="font-size:18px" class="divName">所属项目</div>
+                    <div class="divText">
+                        <input class="textInput" type="text" name="project" value="180730146" placeholder="请输入所属项目">
+                    </div>
+                </div>
+                <div class="telephone">
+                    <div style="font-size:18px" class="divName">手机</div>
+                    <div class="divText">
+                        <input class="textInput" type="text" name="telephone" value="180730146" placeholder="请输入手机号码">
+                    </div>
+                </div>
+                <div class="email">
+                    <div style="font-size:18px" class="divName">邮箱</div>
+                    <div class="divText">
+                        <input class="textInput" type="text" name="email" value="180730146" placeholder="请输人邮箱">
+                    </div>
+                </div>
+                <div class="newPassword">
+                    <div style="font-size:18px" class="divName">新密码</div>
+                    <div class="divText">
+                        <input class="textInput" type="password" name="password" value="" placeholder="请输入新密码">
+                    </div>
+                </div>
+                <div class="isPassword">
+                    <div style="font-size:18px" class="divName">确认新密码</div>
+                    <div class="divText">
+                        <input class="textInput" type="password" name="isPassword" value="" placeholder="确认新密码">
+                    </div>
+                </div>
+                <div style="width:330px;float:left;">
+                    <input class="saveButton" type="button" color="white;" value="保存">
+                </div>
+                <div class="errorInformation"></div>
+            </form>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="./scripts/userEditor.js"></script>
+    <!--     <script type="text/javascript" src="./scripts/common.js"></script> -->
+    <script type="text/javascript">
+
+    </script>
+
+</body>
+
+</html>

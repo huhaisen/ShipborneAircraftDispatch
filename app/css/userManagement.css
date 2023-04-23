@@ -1,0 +1,215 @@
+body div{
+    /*border-style:solid;*/
+    /*border-width:1px;*/
+    margin: 0px;
+}
+
+#root {
+    position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+#top {
+	height: 8%;
+	width: 100%;
+    display: flex;
+    align-items: center;
+    background: #e4e4e6;
+}
+
+#top .sys-name{
+    width: 93%;
+    display: inline-block;
+    text-align: center;
+    font-size: 140%;
+}
+
+#top .sys-btns {
+    width: 7%;
+}
+
+#lower-part {
+    position: absolute;
+    height: 92%;
+    width: 100%;
+}
+
+#lower-part #left{
+    /*position: absolute;*/
+    display: inline-block;
+    background: #e4e4e6;
+    width: 10%;
+    height: 100%;
+}
+#lower-part #right{
+    position: absolute;
+    display: inline-block;
+    background: #ffffff;
+    width: 89%;
+    height: 100%;
+    /*border-style:solid;*/
+    /*border-width:1px;*/
+}
+
+.sys-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    outline: none;
+    margin: 0;
+}
+
+.sys-btn-minis {
+    background: url(../imgs/btn_mini_normal.png) no-repeat;
+}
+
+.sys-btn-minis:hover {
+    border-radius: 0 4px 0 0;
+    background: url(../imgs/btn_mini_highlight.png) no-repeat;
+}
+
+.sys-btn-minis:active {
+    background: url(../imgs/btn_mini_down.png) no-repeat;
+}
+
+.sys-btn-big {
+    background: url(../imgs/turnbig.png) no-repeat;
+}
+
+.sys-btn-big:hover {
+    border-radius: 0 4px 0 0;
+    background: url(../imgs/turnbig_light.png) no-repeat;
+}
+
+.sys-btn-closed {
+    border-radius: 0 4px 0 0;
+    background: url(../imgs/btn_close_normal.png) no-repeat;
+}
+
+.sys-btn-closed:hover {
+    background: url(../imgs/btn_close_highlight.png) no-repeat;
+}
+
+.sys-btn-closed:active {
+    background: url(../imgs/btn_close_down.png) no-repeat;
+}
+
+#left .funButton.user-management {
+    background: #c1bfc0;
+}
+
+#left .funButton {
+    height: 8%;
+    width: 100%;
+    background: #e4e4e6;
+}
+
+#left .funButton button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 16px;
+}
+
+#right .operate {
+    width: 100%;
+    height: 10%;
+}
+
+#right .operate button {
+    margin: 30px 0px 10px 5px;
+}
+
+#right .operate .buttonAdd {
+    margin-left: 30px;
+    border:1px solid #1e7db9;
+    box-shadow: 0 1px 2px #8fcaee inset,0 -1px 0 #497897 inset,0 -2px 3px #8fcaee inset;
+    background: -webkit-linear-gradient(top, #43b1ee, #3091cc);
+    background: -moz-linear-gradient(top, #47abec, #2f8fc8);
+    background: linear-gradient(top, #42aeea, #2f92cc);
+}
+
+#right .operate .buttonDelete {
+    border:1px solid #b42323;
+    box-shadow: 0 1px 2px #e99494 inset,0 -1px 0 #954b4b inset,0 -2px 3px #e99494 inset;
+    background: -webkit-linear-gradient(top, #f13e3e, #e33434);
+    background: -moz-linear-gradient(top, #e63c3c, #cb2a2a);
+    background: linear-gradient(top, #eb3f3f, #cc2828);
+}
+
+
+#right .parameter-detail {
+    width: 100%;
+    height: 80%;
+    /*background-color: #8b8a4d;*/
+}
+
+#right .parameter-detail table {
+    margin-left: 30px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 95%;
+}
+
+#right .parameter-detail td,th {
+    padding: 0;
+    height: 28px;
+}
+
+#right .parameter-detail .pure-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #cbcbcb;
+}
+
+#right .parameter-detail .pure-table caption {
+    color: #000;
+    font: italic 85%/1 arial,sans-serif;
+    padding: 1em 0;
+    text-align: center;
+}
+
+#right .parameter-detail .pure-table td,.pure-table th {
+    border-left: 1px solid #cbcbcb;
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: .5em 1em;
+}
+
+#right .parameter-detail .pure-table thead {
+    background-color: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+#right .parameter-detail .pure-table td {
+    background-color: transparent;
+}
+
+#right .parameter-detail .pure-table-bordered td {
+    border-bottom: 1px solid #cbcbcb;
+}
+
+#right .parameter-detail .pure-table-bordered tbody>tr:last-child>td {
+    border-bottom-width: 0;
+}
+
+
+
+
+
+#right .page-divide {
+    width: 100%;
+    height: 10%;
+    /*background-color: green;*/
+}
+
+#right .page-divide .pages {
+    margin-left: 30px;
+}

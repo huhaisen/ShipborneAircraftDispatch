@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html style="margin:0; padding:0;height:100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script type="text/javascript" src="./scripts/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="card">
+        <div id="front" class="front shadow">
+            <div class="sys-control-box">
+                <button id="btn-set" class="sys-btn sys-btn-set" title="设置"></button><button class="sys-btn sys-btn-mini"
+                    title="最小化"></button><button class="sys-btn sys-btn-close" title="关闭"></button>
+            </div>
+            <div class="system-name">
+                <h2>基于智能算法的舰载机调度仿真系统</h2>
+            </div>
+            <form class="loginForm">
+                <div class="username">
+                    <label for="userid" style="font-size:18px">账号</label>
+                    <div class="divText">
+                        <input class="textInput" type="text" name="username" value="180436987" placeholder="请输入账号">
+                    </div>
+                </div>
+                <div class="password">
+                    <label for="password" style="font-size:18px">密码</label>
+                    <div class="divText">
+                        <input class="textInput" type="password" name="password" value="180436987" placeholder="请输入密码">
+                    </div>
+                </div>
+                <div style="width:330px;float:left;">
+                    <input class="loginButton" type="button" value="登录">
+                    <input class="loginButton" type="button" value="注册">
+                </div>
+                <div class="errorInformation"></div>
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        (function () {
+
+            const remote = require('electron').remote;
+
+            function init() {
+
+                var btn_minis = document.getElementsByClassName("sys-btn-mini");
+                for (var i = 0; i < btn_minis.length; i++) {
+                    btn_minis[i].addEventListener("click", function (e) {
+                        const window = remote.getCurrentWindow();
+                        window.minimize();
+                    });
+                }
+
+                var btn_closes = document.getElementsByClassName("sys-btn-close");
+                for (var i = 0; i < btn_closes.length; i++) {
+                    btn_closes[i].addEventListener("click", function (e) {
+                        const window = remote.getCurrentWindow();
+                        window.destroy();
+                    });
+                }      
+
+            };
+
+            document.onreadystatechange = function () {
+                if (document.readyState == "complete") {
+                    init();
+                }
+            };
+        })();
+    </script>
+
+    <script src="./scripts/login.js"></script>
+
+
+    <!--         <script type="text/javascript" src="./scripts/common.js"></script> -->
+    <!--   <script type="text/javascript" src="../main.js"></script> -->
+</body>
+
+</html>

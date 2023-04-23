@@ -1,0 +1,14 @@
+{
+  "name": "my-app",
+  "version": "1.1.0",
+  "description": "user manger system",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "lxt",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.8"
+  }
+}

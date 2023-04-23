@@ -1,0 +1,115 @@
+body div{
+    /*border-style:solid;*/
+    /*border-width:1px;*/
+    margin: 0px;
+}
+
+#root {
+    position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+#top {
+	height: 8%;
+	width: 100%;
+    display: flex;
+    align-items: center;
+    background: #e4e4e6;
+}
+
+#top .sys-name{
+    width: 93%;
+    display: inline-block;
+    text-align: center;
+    font-size: 140%;
+}
+
+#top .sys-btns {
+    width: 7%;
+}
+
+#lower-part {
+    position: absolute;
+    height: 92%;
+    width: 100%;
+}
+
+#lower-part #left{
+    /*position: absolute;*/
+    display: inline-block;
+    background: #e4e4e6;
+    width: 10%;
+    height: 100%;
+}
+#lower-part #right{
+    position: absolute;
+    display: inline-block;
+    background: #ffffff;
+    width: 89%;
+    height: 100%;
+    /*border-style:solid;*/
+    /*border-width:1px;*/
+}
+
+.sys-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    outline: none;
+    margin: 0;
+}
+
+.sys-btn-minis {
+    background: url(../imgs/btn_mini_normal.png) no-repeat;
+}
+
+.sys-btn-minis:hover {
+    border-radius: 0 4px 0 0;
+    background: url(../imgs/btn_mini_highlight.png) no-repeat;
+}
+
+.sys-btn-minis:active {
+    background: url(../imgs/btn_mini_down.png) no-repeat;
+}
+
+.sys-btn-big {
+    background: url(../imgs/turnbig.png) no-repeat;
+}
+
+.sys-btn-big:hover {
+    border-radius: 0 4px 0 0;
+    background: url(../imgs/turnbig_light.png) no-repeat;
+}
+
+.sys-btn-closed {
+    border-radius: 0 4px 0 0;
+    background: url(../imgs/btn_close_normal.png) no-repeat;
+}
+
+.sys-btn-closed:hover {
+    background: url(../imgs/btn_close_highlight.png) no-repeat;
+}
+
+.sys-btn-closed:active {
+    background: url(../imgs/btn_close_down.png) no-repeat;
+}
+
+#left .funButton.parameter-management {
+    background: #c1bfc0;
+}
+
+#left .funButton {
+    height: 8%;
+    width: 100%;
+    background: #e4e4e6;
+}
+
+#left .funButton button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 16px;
+}
+

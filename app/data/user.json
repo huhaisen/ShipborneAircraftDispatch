@@ -1,0 +1,62 @@
+{
+    "user1": {
+        "id": "1",
+        "name": "王倩",
+        "department": "解决方案管理中心",
+        "project": "深圳地铁13号线",
+        "telephone": "17836951241",
+        "email": "95463214@qq.com",
+        "lid": "184221032",
+        "password": "184221032"
+    },
+    "user2": {
+        "id": "2",
+        "name": "李思雨",
+        "department": "运营管理中心",
+        "project": "湖南融合通信",
+        "telephone": "15963125631",
+        "email": "563248654@qq.com",
+        "lid": "15323054",
+        "password": "15323054"
+    },
+    "user3": {
+        "id": "3",
+        "name": "王晓易",
+        "department": "专项工程",
+        "project": "军体工程芯片",
+        "telephone": "15866341234",
+        "email": "478454513@qq.com",
+        "lid": "180712045",
+        "password": "180712045"
+    },
+    "user4": {
+        "id": "4",
+        "name": "王巧怡",
+        "department": "网管中心",
+        "project": "公共项目",
+        "telephone": "13588464125",
+        "email": "9864561214@qq.com",
+        "lid": "180721459",
+        "password": "180721459"
+    },
+    "user5": {
+        "id": "5",
+        "name": "李一子",
+        "department": "网管开发部",
+        "project": "南山区公安局预案",
+        "telephone": "15988521414",
+        "email": "635545214@163.com",
+        "lid": "180436987",
+        "password": "180436987"
+    },
+    "user6": {
+        "id": "6",
+        "name": "吴子昂",
+        "department": "集成测试部",
+        "project": "丽江公安测试局",
+        "telephone": "13588464125",
+        "email": "9864561214@qq.com",
+        "lid": "170210534",
+        "password": "170210534"
+    }
+}

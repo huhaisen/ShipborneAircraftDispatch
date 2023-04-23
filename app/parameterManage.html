@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>舰载机调度</title>
+    <link rel="stylesheet" type="text/css" href=" ./css/parameterManage.css">
+</head>
+
+<body>
+    <div id="root">
+        <div id="top">
+            <span class="sys-name">
+                基于智能算法的舰载机调度仿真系统
+            </span>
+            <span class="sys-btns">
+                <button class="sys-btn sys-btn-minis" title="最小化"></button>
+                <button class="sys-btn sys-btn-big" title="最大化"></button>
+                <button class="sys-btn sys-btn-closed" title="关闭"></button>
+            </span>
+        </div>
+
+        <div id="lower-part">
+            <div id="left">
+                <div class="funButton mission-rehearsal">
+                    <button>任务推演</button>
+                </div>
+                <div class="funButton parameter-management">
+                    <button>参数管理</button>
+                </div>
+                <div class="funButton user-management">
+                    <button>用户管理</button>
+                </div>
+                <div class="funButton personal-center">
+                    <button>个人中心</button>
+                </div>
+            </div>
+            <div id="right">
+                <div class="operate">
+                    <button class="buttonAdd">添 加</button>
+                    <button class="buttonDelete">删 除</button>
+                    <button class="buttonEdit">编 辑</button>
+                    <button class="buttonRefresh">刷 新</button>
+                </div>
+
+                <div class="parameter-detail">
+                    <div>
+                        <table class="pure-table pure-table-bordered">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>序号</th>
+                                    <th>舰载机编号</th>
+                                    <th>服役年限</th>
+                                    <th>机型</th>
+                                    <th>最大航程(公里)</th>
+                                    <th>最大飞行速度(马赫)</th>
+                                    <th>长度(米)</th>
+                                    <th>翼展(米)</th>
+                                    <th>重量(吨)</th>
+                                    <th>工序集</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>1</td>
+                                    <td>JZJ001</td>
+                                    <td>2</td>
+                                    <td>歼15</td>
+                                    <td>3400</td>
+                                    <td>24</td>
+                                    <td>22.28</td>
+                                    <td>15</td>
+                                    <td>32.5</td>
+                                    <td>
+                                        <button>编辑</button>
+                                        <button>查看</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>2</td>
+                                    <td>JZJ001</td>
+                                    <td>2</td>
+                                    <td>歼15</td>
+                                    <td>3400</td>
+                                    <td>24</td>
+                                    <td>22.28</td>
+                                    <td>15</td>
+                                    <td>32.5</td>
+                                    <td>
+                                        <button>编辑</button>
+                                        <button>查看</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>3</td>
+                                    <td>JZJ001</td>
+                                    <td>2</td>
+                                    <td>歼15</td>
+                                    <td>3400</td>
+                                    <td>24</td>
+                                    <td>22.28</td>
+                                    <td>15</td>
+                                    <td>32.5</td>
+                                    <td>
+                                        <button>编辑</button>
+                                        <button>查看</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>4</td>
+                                    <td>JZJ001</td>
+                                    <td>2</td>
+                                    <td>歼15</td>
+                                    <td>3400</td>
+                                    <td>24</td>
+                                    <td>22.28</td>
+                                    <td>15</td>
+                                    <td>32.5</td>
+                                    <td>
+                                        <button>编辑</button>
+                                        <button>查看</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>5</td>
+                                    <td>JZJ001</td>
+                                    <td>2</td>
+                                    <td>歼15</td>
+                                    <td>3400</td>
+                                    <td>24</td>
+                                    <td>22.28</td>
+                                    <td>15</td>
+                                    <td>32.5</td>
+                                    <td>
+                                        <button>编辑</button>
+                                        <button>查看</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>6</td>
+                                    <td>JZJ001</td>
+                                    <td>2</td>
+                                    <td>歼15</td>
+                                    <td>3400</td>
+                                    <td>24</td>
+                                    <td>22.28</td>
+                                    <td>15</td>
+                                    <td>32.5</td>
+                                    <td>
+                                        <button>编辑</button>
+                                        <button>查看</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>7</td>
+                                    <td>JZJ001</td>
+                                    <td>2</td>
+                                    <td>歼15</td>
+                                    <td>3400</td>
+                                    <td>24</td>
+                                    <td>22.28</td>
+                                    <td>15</td>
+                                    <td>32.5</td>
+                                    <td>
+                                        <button>编辑</button>
+                                        <button>查看</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>8</td>
+                                    <td>JZJ001</td>
+                                    <td>2</td>
+                                    <td>歼15</td>
+                                    <td>3400</td>
+                                    <td>24</td>
+                                    <td>22.28</td>
+                                    <td>15</td>
+                                    <td>32.5</td>
+                                    <td>
+                                        <button>编辑</button>
+                                        <button>查看</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>9</td>
+                                    <td>JZJ001</td>
+                                    <td>2</td>
+                                    <td>歼15</td>
+                                    <td>3400</td>
+                                    <td>24</td>
+                                    <td>22.28</td>
+                                    <td>15</td>
+                                    <td>32.5</td>
+                                    <td>
+                                        <button>编辑</button>
+                                        <button>查看</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>10</td>
+                                    <td>JZJ001</td>
+                                    <td>2</td>
+                                    <td>歼15</td>
+                                    <td>3400</td>
+                                    <td>24</td>
+                                    <td>22.28</td>
+                                    <td>15</td>
+                                    <td>32.5</td>
+                                    <td>
+                                        <button>编辑</button>
+                                        <button>查看</button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="page-divide">
+                    <div class="pages">
+                        上一页 < 1 2 3 4 5 6 … > 下一页 | 共 12 页
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
