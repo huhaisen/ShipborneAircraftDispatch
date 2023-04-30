@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>舰载机调度</title>
+    <link rel="stylesheet" type="text/css" href=" ./css/processView.css">
+</head>
+
+<body>
+    <div id="root">
+        <div id="top">
+            <span class="sys-name">
+                基于智能算法的舰载机调度仿真系统
+            </span>
+            <span class="sys-btns">
+                <button class="sys-btn sys-btn-minis" title="最小化"></button>
+                <button class="sys-btn sys-btn-big" title="最大化"></button>
+                <button class="sys-btn sys-btn-closed" title="关闭"></button>
+            </span>
+        </div>
+
+        <div id="lower-part">
+            <div id="left">
+                <div class="funButton mission-rehearsal">
+                    <button>任务推演</button>
+                </div>
+                <div class="funButton parameter-management">
+                    <button>参数管理</button>
+                </div>
+                <div class="funButton user-management">
+                    <button>用户管理</button>
+                </div>
+                <div class="funButton personal-center">
+                    <button>个人中心</button>
+                </div>
+            </div>
+
+
+            <div id="right">
+                <div class="navigation">
+                    <span class="father-page">参数管理</span>
+                    <span class="icon"> > </span>
+                    <span class="child-page">舰载机工序查看</span>
+                </div>
+                <div class="aircraft-information">
+                    <div class="information-item"><span>舰载机序号：1</span></div>
+                    <div class="information-item"><span>舰载机编号：JZJ001</span></div>
+                    <div class="information-item"><span>机型：歼15</span></div>
+                </div>
+                <!--<div class="operate">-->
+                    <!--<button class="buttonAdd">添 加</button>-->
+                    <!--<button class="buttonDelete">删 除</button>-->
+                    <!--<button class="buttonEdit">编 辑</button>-->
+                <!--</div>-->
+
+                <div class="parameter-detail">
+                    <div class="table-head">
+                        <table class="pure-table pure-table-bordered">
+                            <thead>
+                            <tr>
+                                <th width="10%"><input type="checkbox"></th>
+                                <th width="15%">序号</th>
+                                <th width="25%">工序名</th>
+                                <th width="25%">消耗时间（分钟）</th>
+                                <th width="25%">消耗资源</th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="table-body">
+                        <table class="pure-table pure-table-bordered">
+                            <tbody>
+                            <tr>
+                                <td width="10%"><input type="checkbox"></td>
+                                <td width="15%">1</td>
+                                <td width="25%">工序1</td>
+                                <td width="25%">12</td>
+                                <td width="25%">
+                                    <select>
+                                        <option>--请选择--</option>
+                                        <option>航电</option>
+                                        <option>机械</option>
+                                        <option>特设</option>
+                                        <option>军械</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><input type="checkbox"></td>
+                                <td width="15%">1</td>
+                                <td width="25%">工序1</td>
+                                <td width="25%">12</td>
+                                <td width="25%">
+                                    <select>
+                                        <option>--请选择--</option>
+                                        <option>航电</option>
+                                        <option>机械</option>
+                                        <option>特设</option>
+                                        <option>军械</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><input type="checkbox"></td>
+                                <td width="15%">1</td>
+                                <td width="25%">工序1</td>
+                                <td width="25%">12</td>
+                                <td width="25%">
+                                    <select>
+                                        <option>--请选择--</option>
+                                        <option>航电</option>
+                                        <option>机械</option>
+                                        <option>特设</option>
+                                        <option>军械</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><input type="checkbox"></td>
+                                <td width="15%">1</td>
+                                <td width="25%">工序1</td>
+                                <td width="25%">12</td>
+                                <td width="25%">
+                                    <select>
+                                        <option>--请选择--</option>
+                                        <option>航电</option>
+                                        <option>机械</option>
+                                        <option>特设</option>
+                                        <option>军械</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><input type="checkbox"></td>
+                                <td width="15%">1</td>
+                                <td width="25%">工序1</td>
+                                <td width="25%">12</td>
+                                <td width="25%">
+                                    <select>
+                                        <option>--请选择--</option>
+                                        <option>航电</option>
+                                        <option>机械</option>
+                                        <option>特设</option>
+                                        <option>军械</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><input type="checkbox"></td>
+                                <td width="15%">1</td>
+                                <td width="25%">工序1</td>
+                                <td width="25%">12</td>
+                                <td width="25%">
+                                    <select>
+                                        <option>--请选择--</option>
+                                        <option>航电</option>
+                                        <option>机械</option>
+                                        <option>特设</option>
+                                        <option>军械</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><input type="checkbox"></td>
+                                <td width="15%">1</td>
+                                <td width="25%">工序1</td>
+                                <td width="25%">12</td>
+                                <td width="25%">
+                                    <select>
+                                        <option>--请选择--</option>
+                                        <option>航电</option>
+                                        <option>机械</option>
+                                        <option>特设</option>
+                                        <option>军械</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><input type="checkbox"></td>
+                                <td width="15%">1</td>
+                                <td width="25%">工序1</td>
+                                <td width="25%">12</td>
+                                <td width="25%">
+                                    <select>
+                                        <option>--请选择--</option>
+                                        <option>航电</option>
+                                        <option>机械</option>
+                                        <option>特设</option>
+                                        <option>军械</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><input type="checkbox"></td>
+                                <td width="15%">1</td>
+                                <td width="25%">工序1</td>
+                                <td width="25%">12</td>
+                                <td width="25%">
+                                    <select>
+                                        <option>--请选择--</option>
+                                        <option>航电</option>
+                                        <option>机械</option>
+                                        <option>特设</option>
+                                        <option>军械</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><input type="checkbox"></td>
+                                <td width="15%">1</td>
+                                <td width="25%">工序1</td>
+                                <td width="25%">12</td>
+                                <td width="25%">
+                                    <select>
+                                        <option>--请选择--</option>
+                                        <option>航电</option>
+                                        <option>机械</option>
+                                        <option>特设</option>
+                                        <option>军械</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><input type="checkbox"></td>
+                                <td width="15%">1</td>
+                                <td width="25%">工序1</td>
+                                <td width="25%">12</td>
+                                <td width="25%">
+                                    <select>
+                                        <option>--请选择--</option>
+                                        <option>航电</option>
+                                        <option>机械</option>
+                                        <option>特设</option>
+                                        <option>军械</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><input type="checkbox"></td>
+                                <td width="15%">1</td>
+                                <td width="25%">工序1</td>
+                                <td width="25%">12</td>
+                                <td width="25%">
+                                    <select>
+                                        <option>--请选择--</option>
+                                        <option>航电</option>
+                                        <option>机械</option>
+                                        <option>特设</option>
+                                        <option>军械</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><input type="checkbox"></td>
+                                <td width="15%">1</td>
+                                <td width="25%">工序1</td>
+                                <td width="25%">12</td>
+                                <td width="25%">
+                                    <select>
+                                        <option>--请选择--</option>
+                                        <option>航电</option>
+                                        <option>机械</option>
+                                        <option>特设</option>
+                                        <option>军械</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><input type="checkbox"></td>
+                                <td width="15%">1</td>
+                                <td width="25%">工序1</td>
+                                <td width="25%">12</td>
+                                <td width="25%">
+                                    <select>
+                                        <option>--请选择--</option>
+                                        <option>航电</option>
+                                        <option>机械</option>
+                                        <option>特设</option>
+                                        <option>军械</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><input type="checkbox"></td>
+                                <td width="15%">1</td>
+                                <td width="25%">工序1</td>
+                                <td width="25%">12</td>
+                                <td width="25%">
+                                    <select>
+                                        <option>--请选择--</option>
+                                        <option>航电</option>
+                                        <option>机械</option>
+                                        <option>特设</option>
+                                        <option>军械</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

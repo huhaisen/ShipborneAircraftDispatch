@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>舰载机调度</title>
     <link rel="stylesheet" type="text/css" href=" ./css/missionRehearsal.css">
+
+    <script type="text/javascript" src="./scripts/echarts.min.js"></script>
+    <script type="text/javascript" src="./scripts/jquery.min.js"></script>
 </head>
 
 <body>
@@ -34,8 +37,347 @@
                     <button>个人中心</button>
                 </div>
             </div>
+
             <div id="right">
-                右侧
+                <div class="video task-set">
+                    <div id="video-chart" class="video">
+                        <!--动画展示-->
+                    </div>
+                    <script type="text/javascript" src="scripts/video-chart.js"></script>
+
+                    <div class="task-set">
+                        <!--任务设置-->
+                        <div class="title">
+                            <div class="title-item"> <p><b>任务参数设置</b></p> </div>
+                            <div class="title-item"> <button>开始推演</button> </div>
+                        </div>
+                        <div class="set-support-group">
+                            <p>设置各保障组数量 :</p>
+                            <div>
+                                <span>航电组：</span>
+                                <select>
+                                    <option>--请选择-- </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                </select>
+                                <span>机械组：</span>
+                                <select>
+                                    <option>--请选择-- </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                </select>
+                            </div>
+                            <div>
+                                <span>军械组：</span>
+                                <select>
+                                    <option>--请选择-- </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                </select>
+                                <span>特设组：</span>
+                                <select>
+                                    <option>--请选择-- </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="set-aircraft-num">
+                            <p>选择出动的舰载机：</p>
+                            <div class="operate">
+                                <button class="buttonAdd">添 加</button>
+                                <button class="buttonDelete">删 除</button>
+                            </div>
+                            <div class="aircraft-detail">
+                                <div class="table-head">
+                                    <table class="pure-table pure-table-bordered">
+                                        <thead>
+                                        <tr>
+                                            <th width="10%"><input type="checkbox"></th>
+                                            <th width="15%">序号</th>
+                                            <th width="30%">舰载机编号</th>
+                                            <th width="20%">机型</th>
+                                            <th width="25%">工序集</th>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                                <div class="table-body">
+                                    <table class="pure-table pure-table-bordered">
+                                        <tbody>
+                                        <tr>
+                                            <td width="10%"><input type="checkbox"></td>
+                                            <td width="15%">1</td>
+                                            <td width="30%">
+                                                <select>
+                                                    <option>--请选择-- </option>
+                                                    <option>001</option>
+                                                    <option>002</option>
+                                                    <option>003</option>
+                                                    <option>004</option>
+                                                    <option>005</option>
+                                                    <option>006</option>
+                                                    <option>007</option>
+                                                    <option>008</option>
+                                                    <option>009</option>
+                                                    <option>010</option>
+                                                </select>
+                                            </td>
+                                            <td width="20%">歼15</td>
+                                            <td width="25%"> <button>查看</button> </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="10%"><input type="checkbox"></td>
+                                            <td width="15%">1</td>
+                                            <td width="30%">
+                                                <select>
+                                                    <option>--请选择-- </option>
+                                                    <option>001</option>
+                                                    <option>002</option>
+                                                    <option>003</option>
+                                                    <option>004</option>
+                                                    <option>005</option>
+                                                    <option>006</option>
+                                                    <option>007</option>
+                                                    <option>008</option>
+                                                    <option>009</option>
+                                                    <option>010</option>
+                                                </select>
+                                            </td>
+                                            <td width="20%">歼15</td>
+                                            <td width="25%"> <button>查看</button> </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="10%"><input type="checkbox"></td>
+                                            <td width="15%">1</td>
+                                            <td width="30%">
+                                                <select>
+                                                    <option>--请选择-- </option>
+                                                    <option>001</option>
+                                                    <option>002</option>
+                                                    <option>003</option>
+                                                    <option>004</option>
+                                                    <option>005</option>
+                                                    <option>006</option>
+                                                    <option>007</option>
+                                                    <option>008</option>
+                                                    <option>009</option>
+                                                    <option>010</option>
+                                                </select>
+                                            </td>
+                                            <td width="20%">歼15</td>
+                                            <td width="25%"> <button>查看</button> </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="10%"><input type="checkbox"></td>
+                                            <td width="15%">1</td>
+                                            <td width="30%">
+                                                <select>
+                                                    <option>--请选择-- </option>
+                                                    <option>001</option>
+                                                    <option>002</option>
+                                                    <option>003</option>
+                                                    <option>004</option>
+                                                    <option>005</option>
+                                                    <option>006</option>
+                                                    <option>007</option>
+                                                    <option>008</option>
+                                                    <option>009</option>
+                                                    <option>010</option>
+                                                </select>
+                                            </td>
+                                            <td width="20%">歼15</td>
+                                            <td width="25%"> <button>查看</button> </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="10%"><input type="checkbox"></td>
+                                            <td width="15%">1</td>
+                                            <td width="30%">
+                                                <select>
+                                                    <option>--请选择-- </option>
+                                                    <option>001</option>
+                                                    <option>002</option>
+                                                    <option>003</option>
+                                                    <option>004</option>
+                                                    <option>005</option>
+                                                    <option>006</option>
+                                                    <option>007</option>
+                                                    <option>008</option>
+                                                    <option>009</option>
+                                                    <option>010</option>
+                                                </select>
+                                            </td>
+                                            <td width="20%">歼15</td>
+                                            <td width="25%"> <button>查看</button> </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="10%"><input type="checkbox"></td>
+                                            <td width="15%">1</td>
+                                            <td width="30%">
+                                                <select>
+                                                    <option>--请选择-- </option>
+                                                    <option>001</option>
+                                                    <option>002</option>
+                                                    <option>003</option>
+                                                    <option>004</option>
+                                                    <option>005</option>
+                                                    <option>006</option>
+                                                    <option>007</option>
+                                                    <option>008</option>
+                                                    <option>009</option>
+                                                    <option>010</option>
+                                                </select>
+                                            </td>
+                                            <td width="20%">歼15</td>
+                                            <td width="25%"> <button>查看</button> </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="10%"><input type="checkbox"></td>
+                                            <td width="15%">1</td>
+                                            <td width="30%">
+                                                <select>
+                                                    <option>--请选择-- </option>
+                                                    <option>001</option>
+                                                    <option>002</option>
+                                                    <option>003</option>
+                                                    <option>004</option>
+                                                    <option>005</option>
+                                                    <option>006</option>
+                                                    <option>007</option>
+                                                    <option>008</option>
+                                                    <option>009</option>
+                                                    <option>010</option>
+                                                </select>
+                                            </td>
+                                            <td width="20%">歼15</td>
+                                            <td width="25%"> <button>查看</button> </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="10%"><input type="checkbox"></td>
+                                            <td width="15%">1</td>
+                                            <td width="30%">
+                                                <select>
+                                                    <option>--请选择-- </option>
+                                                    <option>001</option>
+                                                    <option>002</option>
+                                                    <option>003</option>
+                                                    <option>004</option>
+                                                    <option>005</option>
+                                                    <option>006</option>
+                                                    <option>007</option>
+                                                    <option>008</option>
+                                                    <option>009</option>
+                                                    <option>010</option>
+                                                </select>
+                                            </td>
+                                            <td width="20%">歼15</td>
+                                            <td width="25%"> <button>查看</button> </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="10%"><input type="checkbox"></td>
+                                            <td width="15%">1</td>
+                                            <td width="30%">
+                                                <select>
+                                                    <option>--请选择-- </option>
+                                                    <option>001</option>
+                                                    <option>002</option>
+                                                    <option>003</option>
+                                                    <option>004</option>
+                                                    <option>005</option>
+                                                    <option>006</option>
+                                                    <option>007</option>
+                                                    <option>008</option>
+                                                    <option>009</option>
+                                                    <option>010</option>
+                                                </select>
+                                            </td>
+                                            <td width="20%">歼15</td>
+                                            <td width="25%"> <button>查看</button> </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="10%"><input type="checkbox"></td>
+                                            <td width="15%">1</td>
+                                            <td width="30%">
+                                                <select>
+                                                    <option>--请选择-- </option>
+                                                    <option>001</option>
+                                                    <option>002</option>
+                                                    <option>003</option>
+                                                    <option>004</option>
+                                                    <option>005</option>
+                                                    <option>006</option>
+                                                    <option>007</option>
+                                                    <option>008</option>
+                                                    <option>009</option>
+                                                    <option>010</option>
+                                                </select>
+                                            </td>
+                                            <td width="20%">歼15</td>
+                                            <td width="25%"> <button>查看</button> </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="10%"><input type="checkbox"></td>
+                                            <td width="15%">1</td>
+                                            <td width="30%">
+                                                <select>
+                                                    <option>--请选择-- </option>
+                                                    <option>001</option>
+                                                    <option>002</option>
+                                                    <option>003</option>
+                                                    <option>004</option>
+                                                    <option>005</option>
+                                                    <option>006</option>
+                                                    <option>007</option>
+                                                    <option>008</option>
+                                                    <option>009</option>
+                                                    <option>010</option>
+                                                </select>
+                                            </td>
+                                            <td width="20%">歼15</td>
+                                            <td width="25%"> <button>查看</button> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result">结果</div>
+
+                    </div>
+                </div>
+
+                <div class="gantt-charts">
+                    <div id="chart01" class="aircraft-chart">
+                        <!--甘特图1-->
+                    </div>
+                    <script type="text/javascript" src="./scripts/aircraft-chart.js"></script>
+
+                    <div id="chart02" class="resource-chart">
+                        <!--甘特图2-->
+                    </div>
+                    <script type="text/javascript" src="./scripts/resource-chart.js"></script>
+                </div>
             </div>
         </div>
     </div>

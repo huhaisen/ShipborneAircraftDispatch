@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 body div{
     /*border-style:solid;*/
     /*border-width:1px;*/
@@ -95,7 +99,7 @@ body div{
     background: url(../imgs/btn_close_down.png) no-repeat;
 }
 
-#left .funButton.parameter-management {
+#left .funButton.personal-center {
     background: #c1bfc0;
 }
 
@@ -113,3 +117,38 @@ body div{
     font-size: 16px;
 }
 
+
+
+
+
+#right .login-box {
+    width: 500px;
+    min-height: 400px;
+    padding: 25px 25px 23px;
+    color: #585858;
+    background: #f4f4f4;
+    position: center;
+    margin: 0 auto;
+}
+
+#right .login-box .input-group-addon {
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-right: 0;
+}
+
+#right .login-box .fm-button {
+    background: #CA3;
+    border-color: #f40;
+    font-size: 18px;
+    color: White ;
+    width:120px;
+    height:42px;
+}

@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 body div{
     /*border-style:solid;*/
     /*border-width:1px;*/
@@ -95,7 +99,7 @@ body div{
     background: url(../imgs/btn_close_down.png) no-repeat;
 }
 
-#left .funButton.parameter-management {
+#left .funButton.mission-rehearsal {
     background: #c1bfc0;
 }
 
@@ -113,3 +117,197 @@ body div{
     font-size: 16px;
 }
 
+
+#right .video.task-set {
+    /*position: absolute;*/
+    height: 53%;
+    width: 100%;
+}
+
+#right .video.task-set .video {
+    display: inline-block;
+    width: 63%;
+    height: 95%;
+    margin: 1%;
+    background: #f8f9f4;
+}
+
+#right .video.task-set .task-set {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    height: 95%;
+    margin: 1%;
+    /*background: #c9cc90;*/
+}
+
+#right .video.task-set .task-set button{
+    height: 18px;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+}
+
+#right .video.task-set .task-set p{
+    font-size: 13px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+#right .video.task-set .task-set span{
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+#right .video.task-set .task-set select {
+    font-size: 13px;
+}
+
+#right .task-set .title {
+    width: 100%;
+    height: 8%;
+    margin-top: -5px;
+    /*border-style:solid;*/
+    /*border-width:1px;*/
+}
+
+#right .task-set .title .title-item {
+    display: inline-block;
+    width: 49%;
+}
+
+#right .task-set .set-support-group {
+    width: 100%;
+    height: 20%;
+    border-style:solid;
+    border-width:1px;
+    border-color: #7c838a;
+}
+
+#right .set-aircraft-num {
+    width: 100%;
+    height: 60%;
+    padding-bottom: 10px;
+    border-style:solid;
+    border-width:1px;
+    border-color: #7c838a;
+}
+
+#right .set-aircraft-num .operate {
+    width: 100%;
+    height: 10%;
+}
+
+#right .set-aircraft-num .operate .buttonAdd {
+    border:1px solid #1e7db9;
+    box-shadow: 0 1px 2px #8fcaee inset,0 -1px 0 #497897 inset,0 -2px 3px #8fcaee inset;
+    background: -webkit-linear-gradient(top, #43b1ee, #3091cc);
+    background: -moz-linear-gradient(top, #47abec, #2f8fc8);
+    background: linear-gradient(top, #42aeea, #2f92cc);
+}
+
+#right .set-aircraft-num .operate .buttonDelete {
+    border:1px solid #b42323;
+    box-shadow: 0 1px 2px #e99494 inset,0 -1px 0 #954b4b inset,0 -2px 3px #e99494 inset;
+    background: -webkit-linear-gradient(top, #f13e3e, #e33434);
+    background: -moz-linear-gradient(top, #e63c3c, #cb2a2a);
+    background: linear-gradient(top, #eb3f3f, #cc2828);
+}
+
+
+#right .set-aircraft-num .aircraft-detail {
+    width: 100%;
+    height: 85%;
+}
+
+#right .set-aircraft-num .aircraft-detail .table-head {
+    width: 96%;
+}
+
+#right .set-aircraft-num .aircraft-detail .table-body {
+    width: 100%;
+    height: 85%;
+    margin-top: -2px;
+    overflow-y: scroll;
+}
+
+#right .set-aircraft-num .aircraft-detail table {
+    margin-top: 2px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#right .set-aircraft-num .aircraft-detail td,th {
+    padding: 0;
+    height: 23px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#right .set-aircraft-num .aircraft-detail .pure-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #cbcbcb;
+}
+
+#right .set-aircraft-num .aircraft-detail .pure-table td,.pure-table th {
+    border-left: 1px solid #cbcbcb;
+    border-width: 0 0 0 1px;
+    font-size: 13px;
+    margin: 0;
+    overflow: visible;
+}
+
+#right .set-aircraft-num .aircraft-detail .pure-table thead {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+#right .set-aircraft-num .aircraft-detail .pure-table td {
+    background-color: transparent;
+}
+
+#right .set-aircraft-num .aircraft-detail .pure-table-bordered td {
+    border-bottom: 1px solid #cbcbcb;
+}
+
+#right .set-aircraft-num .aircraft-detail .pure-table-bordered tbody>tr:last-child>td {
+    border-bottom-width: 0;
+}
+
+#right .result {
+    width: 100%;
+    height: 10%;
+    /*border-style:solid;*/
+    /*border-width:1px;*/
+}
+
+
+
+
+#right .gantt-charts {
+    /*position: absolute;*/
+    height: 47%;
+    width: 100%;
+}
+
+#right .gantt-charts .aircraft-chart {
+    display: inline-block;
+    width: 48%;
+    height: 94%;
+    margin: 1%;
+    background: #f8f9f4;
+}
+
+#right .gantt-charts .resource-chart {
+    display: inline-block;
+    width: 47.5%;
+    height: 94%;
+    margin: 1%;
+    background: #f8f9f4;
+}

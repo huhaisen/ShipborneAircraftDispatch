@@ -117,37 +117,82 @@ body div{
     font-size: 16px;
 }
 
-#right .operate {
+
+
+
+#right .navigation {
     width: 100%;
-    height: 10%;
+    height: 8%;
+    margin: 5px 0px 0px 10px;
+    font-size: 12px;
+    /*border-style:solid;*/
+    /*border-width:1px;*/
 }
 
-#right .operate button {
-    margin: 30px 0px 10px 5px;
+#right .navigation .father-page {
+    color: #7c838a;
 }
 
-#right .operate .buttonAdd {
-    margin-left: 30px;
-    border:1px solid #1e7db9;
-    box-shadow: 0 1px 2px #8fcaee inset,0 -1px 0 #497897 inset,0 -2px 3px #8fcaee inset;
-    background: -webkit-linear-gradient(top, #43b1ee, #3091cc);
-    background: -moz-linear-gradient(top, #47abec, #2f8fc8);
-    background: linear-gradient(top, #42aeea, #2f92cc);
+#right .aircraft-information {
+    width: 100%;
+    height: 8%;
+    /*border-style:solid;*/
+    /*border-width:1px;*/
 }
 
-#right .operate .buttonDelete {
-    border:1px solid #b42323;
-    box-shadow: 0 1px 2px #e99494 inset,0 -1px 0 #954b4b inset,0 -2px 3px #e99494 inset;
-    background: -webkit-linear-gradient(top, #f13e3e, #e33434);
-    background: -moz-linear-gradient(top, #e63c3c, #cb2a2a);
-    background: linear-gradient(top, #eb3f3f, #cc2828);
+#right .aircraft-information .information-item {
+    display: inline-block;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
 }
+
+/*#right .operate {*/
+    /*margin-left: 300px;*/
+    /*width: 50%;*/
+    /*height: 10%;*/
+    /*margin-top: -20px;*/
+/*}*/
+
+/*#right .operate button {*/
+    /*margin: 30px 0px 10px 5px;*/
+/*}*/
+
+/*#right .operate .buttonAdd {*/
+    /*margin-left: 30px;*/
+    /*border:1px solid #1e7db9;*/
+    /*box-shadow: 0 1px 2px #8fcaee inset,0 -1px 0 #497897 inset,0 -2px 3px #8fcaee inset;*/
+    /*background: -webkit-linear-gradient(top, #43b1ee, #3091cc);*/
+    /*background: -moz-linear-gradient(top, #47abec, #2f8fc8);*/
+    /*background: linear-gradient(top, #42aeea, #2f92cc);*/
+/*}*/
+
+/*#right .operate .buttonDelete {*/
+    /*border:1px solid #b42323;*/
+    /*box-shadow: 0 1px 2px #e99494 inset,0 -1px 0 #954b4b inset,0 -2px 3px #e99494 inset;*/
+    /*background: -webkit-linear-gradient(top, #f13e3e, #e33434);*/
+    /*background: -moz-linear-gradient(top, #e63c3c, #cb2a2a);*/
+    /*background: linear-gradient(top, #eb3f3f, #cc2828);*/
+/*}*/
 
 
 #right .parameter-detail {
+    margin-left: 300px;
+    width: 50%;
+    height: 75%;
+    /*background-color: #8b8a4d;*/
+}
+
+#right .parameter-detail .table-head {
+    width: 97.5%;
+}
+
+#right .parameter-detail .table-body {
     width: 100%;
     height: 80%;
-    /*background-color: #8b8a4d;*/
+    overflow-y: scroll;
 }
 
 #right .parameter-detail table {
@@ -155,6 +200,8 @@ body div{
     border-collapse: collapse;
     border-spacing: 0;
     width: 95%;
+    text-align: center;
+    vertical-align: middle;
 }
 
 #right .parameter-detail td,th {
@@ -205,15 +252,3 @@ body div{
 }
 
 
-
-
-
-#right .page-divide {
-    width: 100%;
-    height: 10%;
-    /*background-color: green;*/
-}
-
-#right .page-divide .pages {
-    margin-left: 30px;
-}
